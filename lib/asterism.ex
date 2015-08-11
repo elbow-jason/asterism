@@ -1,0 +1,2 @@
+defmodule Asterism do
+end
