@@ -14,7 +14,10 @@ defmodule Asterism.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger]]
+    apps = [
+      :logger
+    ]
+    [applications: apps]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +30,8 @@ defmodule Asterism.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [
+      {:timex, "~> 0.18.2"},
+    ]
   end
 end
